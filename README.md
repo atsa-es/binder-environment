@@ -1,2 +1,3 @@
 # binder-environment
-A binder environment for ATSA material
+
+This sets up a Binder environment. Content will be pulled in from other repos.
