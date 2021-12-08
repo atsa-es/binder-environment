@@ -2,4 +2,4 @@
 install.packages("remotes")
 remotes::install_github("atsa-es/atsalibrary", dependencies = c("Depends", "Imports"))
 # This fixes a bug that didn't allow help to be shown in Jupyter notebooks
-remotes::install_github("IRkernel/repr")
+remotes::install_github("IRkernel/repr", update="never")
