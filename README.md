@@ -1,4 +1,6 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/atsa-es/binder-environment/HEAD)
+JupyterLab: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/atsa-es/binder-environment/HEAD)
+
+RStudio: [![Binder](https://mybinder.org/v2/gh/atsa-es/binder-environment/HEAD?urlpath=rstudio)
 
 # binder-environment
 
