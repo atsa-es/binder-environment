@@ -26,6 +26,8 @@ The rest of the readme describes what is in the repo.
 
 To make the binder image (which takes forever), I copy the URL of thie repo (binder-environment) and paste it into the box on [mybinder.org](https://mybinder.org/)
 
+The image making fails about 4 times out of 5 for me. Look at the errors but often I just have to retry. The slow part seems to be the installation of all the packages in [atsalibrary](https://github.com/atsa-es/atsalibrary).
+
 # Pulling in content from another repo
 
 I have set this environment up so that you can pull in the contents from another repo into the created virtual environment. The binder image take **forever** to build so you don't want to be rebuilding that whenever you change the content. Also you can just use one image for lots of different content.
