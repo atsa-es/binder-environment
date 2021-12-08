@@ -1,2 +1,7 @@
+# get the jupyterlab config file
+mkdir -p ${HOME}/.jupyter/labconfig
+cp labconfig/* ${HOME}/.jupyter/labconfig
+
+# set up nbgitpuller
 jupyter serverextension enable --py nbgitpuller --sys-prefix
 jupyter lab build
