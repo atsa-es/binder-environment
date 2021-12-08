@@ -9,3 +9,9 @@ https://discourse.jupyter.org/t/tip-speed-up-binder-launches-by-pulling-github-c
 
 Read this on how to work with Rmd files in Jupyter Notebook
 https://jupytext.readthedocs.io/en/latest/faq.html
+
+* add `jupytext` to the `requirements.txt`
+* add `jupyter lab build` to `postBuild`
+
+To use, just double-click on an Rmd file and it'll open as a Jupyter notebook.
+Demo it here https://mybinder.org/v2/gh/mwouts/nbrmd/main?filepath=demo Note this is python code not R but you'll get the idea.
