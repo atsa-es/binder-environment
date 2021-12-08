@@ -44,3 +44,7 @@ https://jupytext.readthedocs.io/en/latest/faq.html
 
 To use, just double-click on an Rmd file and it'll open as a Jupyter notebook.
 Demo it here https://mybinder.org/v2/gh/mwouts/nbrmd/main?filepath=demo Note this is python code not R but you'll get the idea.
+
+# Altering the default JupyterLab config
+
+I want the default viewer for Rmd files in JupyterLab to be Notebook not Editor. I set this in the `labconfig` folder with a default override file.
