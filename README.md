@@ -1,6 +1,6 @@
 | Base Environment in JupyterLab | Base Environment in RStudio | atsa-labs in JupyterLab | atsa-labs in RStudio |
 |:----------:|:---------:|:----------:|:---------:|
-| [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/atsa-es/binder-environment/HEAD)  | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/atsa-es/binder-environment/HEAD?urlpath=rstudio) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/atsa-es/binder-environment/main?urlpath=git-pull?repo=https://github.com/atsa-es/atsa-labs&urlpath=lab/tree/atsa-labs/cleanedRmd&branch=master) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/atsa-es/binder-environment/main?urlpath=git-pull?repo=https://github.com/atsa-es/atsa-labs&urlpath=rstudio/tree/atsa-labs/cleanedRmd&branch=master) |
+| [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/atsa-es/binder-environment/HEAD)  | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/atsa-es/binder-environment/HEAD?urlpath=rstudio) | [![Binder](https://mybinder.org/v2/gh/atsa-es/binder-environment/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fatsa-es%252Fatsa-labs%26urlpath%3Dlab%252Ftree%252Fatsa-labs%252FcleanedRmd%26branch%3Dmaster) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/atsa-es/binder-environment/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fatsa-es%252Fatsa-labs%26urlpath%3Drstudio%252Ftree%252Fatsa-labs%252FcleanedRmd%26branch%3Dmaster) |
 
 
 This repo sets up a Binder environment for ATSA Labs eBook. Then `nbgitpuller` (a Python package) is used to pull in content from another repo into that environment. It takes forever to build the environment since R needs to be built so I don't want to have to rebuild everytime I change the content. So environment is in this repo and content is developed in other repos. The binder environment can be used to open content in any GitHub repo.
@@ -11,13 +11,8 @@ You can use the environment to open files in any GitHub repo. The buttons above 
 
 Basically your URL for your binder JupyterLab is going to look like this. The part after `git-pull` is the repo where to pull in the content and the part after `&urlpath=lab/tree/...` is saying what part of the repo to open at. In this case, open in the `cleanedRmd` folder.
 ```
-https://mybinder.org/v2/gh/atsa-es/binder-environment/main?urlpath=git-pull?repo=https://github.com/atsa-es/atsa-labs&urlpath=lab/tree/atsa-labs/cleanedRmd&branch=master
-```
-<!--
-```
 https://mybinder.org/v2/gh/atsa-es/binder-environment/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fatsa-es%252Fatsa-labs%26urlpath%3Dlab%252Ftree%252Fatsa-labs%252FcleanedRmd%26branch%3Dmaster
 ```
--->
 
 ------------
 
