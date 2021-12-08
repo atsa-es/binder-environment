@@ -6,6 +6,17 @@
 
 This sets up a Binder environment. This takes forever to build so I don't want to keep rebuilding everytime I change the content.
 
+To use this environment to open a repo, use this tool to generate the link: https://jupyterhub.github.io/nbgitpuller/link
+
+Basically your URL for your binder JupyterLab is going to look like this
+```
+https://mybinder.org/v2/gh/atsa-es/binder-environment/main?urlpath=git-pull?repo=https://github.com/atsa-es/atsa-labs%26urlpath%3Dlab%252Ftree%252Fatsa-labs%252F%26branch%3Dmain
+```
+
+```
+https://mybinder.org/v2/gh/atsa-es/binder-environment/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fatsa-es%252Fatsa-labs%26urlpath%3Dlab%252Ftree%252Fatsa-labs%252F%26branch%3Dmain
+```
+
 # Set-up
 
 Look at the files in this repo. That's what you need.
