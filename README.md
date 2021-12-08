@@ -24,7 +24,7 @@ The rest of the readme describes what is in the repo.
 
 # Making the Binder image
 
-Copy the URL of your GitHub repo and paste it into the box on [mybinder.org](https://mybinder.org/)
+To make the binder image (which takes forever), I copy the URL of thie repo (binder-environment) and paste it into the box on [mybinder.org](https://mybinder.org/)
 
 # Pulling in content from another repo
 
@@ -49,3 +49,10 @@ Demo it here https://mybinder.org/v2/gh/mwouts/nbrmd/main?filepath=demo Note thi
 # Altering the default JupyterLab config
 
 I want the default viewer for Rmd files in JupyterLab to be Notebook not Editor. I set this in the `labconfig` folder with a default override file. [See this for example](https://github.com/mwouts/jupytext/blob/main/binder/labconfig/default_setting_overrides.json)
+
+# Various problems
+
+* It didn't build when I tried to include `devtools` (in the Imports part of the DESCRIPTION file of atsalibrary) so I used `remotes`.
+* The `repr` package had a bug that didn't allow help output (like `?lm`) in Jupyter notebooks. It was fixed Dec 2021 so I had to re-install repr in `install.R` to get the newer version.
+* With nbgitpuller to get the content from another repo, it's a bit harder to get to the JupyterLab UI. You have to do some gymnastics with the URL you use. See above for how to get the URL.
+* Why not use a Rocker pre-build docker image? Because MyBinder docs say don't do that and actually it was easier to customize without that and it is helpful to have all the standard Python packages.
