@@ -3,7 +3,7 @@
 | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/atsa-es/binder-environment/HEAD)  | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/atsa-es/binder-environment/HEAD?urlpath=rstudio) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/atsa-es/binder-environment/main?urlpath=git-pull?repo=https://github.com/atsa-es/atsa-labs&urlpath=lab/tree/atsa-labs/cleanedRmd&branch=master) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/atsa-es/binder-environment/main?urlpath=git-pull?repo=https://github.com/atsa-es/atsa-labs&urlpath=rstudio/tree/atsa-labs/cleanedRmd&branch=master) |
 
 
-This repo sets up a Binder environment for ATSA Labs eBook. The environment takes forever to build so I don't want to keep rebuilding everytime I change the content.
+This repo sets up a Binder environment for ATSA Labs eBook. Then `nbgitpuller` is used to pull in content from another repo into that environment. It takes forever to build the environment since R needs to be built so I don't want to have to rebuild everytime I change the content. So environment is in this repo and content is developed in other repos. The binder environment can be used to open content in any GitHub repo.
 
 # Creating the link
 
