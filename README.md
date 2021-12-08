@@ -8,13 +8,13 @@ This sets up a Binder environment. This takes forever to build so I don't want t
 
 To use this environment to open a repo, use this tool to generate the link: https://jupyterhub.github.io/nbgitpuller/link
 
-Basically your URL for your binder JupyterLab is going to look like this
+Basically your URL for your binder JupyterLab is going to look like this. The part after `git-pull` is the repo where to pull in the content and the part after `&urlpath=lab/tree/...` is saying what part of the repo to open at. In this case, open in the `cleanedRmd` folder.
 ```
-https://mybinder.org/v2/gh/atsa-es/binder-environment/main?urlpath=git-pull?repo=https://github.com/atsa-es/atsa-labs%26urlpath%3Dlab%252Ftree%252Fatsa-labs%252F%26branch%3Dmain
+https://mybinder.org/v2/gh/atsa-es/binder-environment/main?urlpath=git-pull?repo=https://github.com/atsa-es/atsa-labs&urlpath=lab/tree/atsa-labs/cleanedRmd&branch=master
 ```
 
 ```
-https://mybinder.org/v2/gh/atsa-es/binder-environment/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fatsa-es%252Fatsa-labs%26urlpath%3Dlab%252Ftree%252Fatsa-labs%252F%26branch%3Dmain
+https://mybinder.org/v2/gh/atsa-es/binder-environment/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fatsa-es%252Fatsa-labs%26urlpath%3Dlab%252Ftree%252Fatsa-labs%252FcleanedRmd%26branch%3Dmaster
 ```
 
 # Set-up
