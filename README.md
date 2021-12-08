@@ -47,4 +47,4 @@ Demo it here https://mybinder.org/v2/gh/mwouts/nbrmd/main?filepath=demo Note thi
 
 # Altering the default JupyterLab config
 
-I want the default viewer for Rmd files in JupyterLab to be Notebook not Editor. I set this in the `labconfig` folder with a default override file.
+I want the default viewer for Rmd files in JupyterLab to be Notebook not Editor. I set this in the `labconfig` folder with a default override file. [See this for example](https://github.com/mwouts/jupytext/blob/main/binder/labconfig/default_setting_overrides.json)
