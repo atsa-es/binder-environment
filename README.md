@@ -20,11 +20,11 @@ The rest of the readme describes what is in the repo.
 
 # Set-up for your binder JupyterHub
 
-`requirements.txt`, `postBuild` and `install.R` are what you need. The file in `labconfig` is to change the default behavior of the JupyterLab and is not required (but nice). In `requirements.txt` you set the R version and date. Basically this will use the [Microsoft R time machine](https://mran.microsoft.com/timemachine) to get R and associated packages for a certain date. That way you make sure that all the packages should work together. There might be some futzing to get a date and R versions that works well for you. Note that the RStudio version on Binder is old and might not work with the newest R versions.
+`requirements.txt`, `postBuild` and `install.R` are what you need. The file in `labconfig` is to change the default behavior of the JupyterLab and is not required (but nice). In `runtime.txt` you set the R version and date. Basically this will use the [Microsoft R time machine](https://mran.microsoft.com/timemachine) to get R and associated packages for a certain date. That way you make sure that all the packages should work together. There might be some futzing to get a date and R versions that works well for you. Note that the RStudio version on Binder is old and might not work with the newest R versions.
 
 # Making the Binder image
 
-To make the binder image (which takes forever), I copy the URL of thie repo (binder-environment) and paste it into the box on [mybinder.org](https://mybinder.org/)
+To make the binder image (which takes forever), I copy the URL of this repo (binder-environment) and paste it into the box on [mybinder.org](https://mybinder.org/)
 
 The image making fails about 4 times out of 5 for me. Look at the errors but often I just have to retry. The slow part seems to be the installation of all the packages in [atsalibrary](https://github.com/atsa-es/atsalibrary).
 
